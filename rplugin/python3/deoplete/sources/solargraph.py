@@ -4,8 +4,11 @@ import re
 import subprocess
 import os
 
-import solargraph_utils as solar
-from deoplete.util import getlines,expand
+from deoplete.util import getlines, expand, load_external_module, error
+
+load_external_module(__file__, 'sources')
+import deoplete_solargraph as solar
+
 from .base import Base
 
 is_window = platform.system() == "Windows"

@@ -9,7 +9,6 @@
 * [neovim](https://github.com/neovim/neovim)
 * [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 * [solargraph](https://github.com/castwide/solargraph)
-* [solargraph-utils.py](https://github.com/uplus/solargraph-utils.py)
 
 
 #### Install and Setup
@@ -18,7 +17,6 @@ Install  `solargraph` and `solargraph-utils.py`.
 
 ```bash
 gem install solargraph
-pip install solargraph-utils.py --user
 ```
 
 Setup `solargraph`(`yard`).

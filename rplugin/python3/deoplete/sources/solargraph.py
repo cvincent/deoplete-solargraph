@@ -65,6 +65,9 @@ class Source(Base):
         self.is_server_started = True
         return True
 
+    def __del__(self):
+        self.server.stop()
+
     def get_complete_position(self, context):
         m = re.search('[a-zA-Z0-9_?!]*$', context['input'])
         return m.start() if m else -1
